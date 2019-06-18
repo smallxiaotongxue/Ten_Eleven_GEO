@@ -6,8 +6,36 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "十七地理",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#696969",
+    "selectedColor": "#FFD161",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "static/icons/rank.png",
+        "selectedIconPath": "static/icons/rank-active.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "活动",
+        "iconPath": "static/icons/activity.png",
+        "selectedIconPath": "static/icons/activity-active.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "static/icons/person.png",
+        "selectedIconPath": "static/icons/person-active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-row": "miniprogram_npm/vant-weapp/row/index",
+    "van-col": "miniprogram_npm/vant-weapp/col/index"
+  }
 }

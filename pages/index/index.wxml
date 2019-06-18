@@ -1,24 +1,31 @@
 <!-- index.wxml -->
 <view class="index-page">
+  <!-- 广告banner -->
   <view class="banner-wrap">
-    <swiper indicator-dots="{{true}}" autoplay="{{true}}">
-        <swiper-item wx:for="{{imgUrls}}">
+    <swiper 
+      circular="{{true}}" 
+      autoplay="{{true}}"
+      previous-margin="30px" 
+      next-margin="30px"
+      bindchange="bannerChange">
+      <block wx:for="{{bannerImgUrls}}" wx:key="index">
+        <swiper-item>
           <view class="banner-item">
-            <image class="banner-img" style="height: 150px" src="{{item}}"/>
+            <image class="{{currBannerIndex === index ? 'active banner-img': 'banner-img' }}" src="{{item}}"/>
           </view>
         </swiper-item>
+      </block>
     </swiper>
+    <view  class="banner-dots">
+      <view class="dot {{currBannerIndex === index ? 'active' : ''}}" wx:for="{{bannerImgUrls}}" wx:key="index">
+      </view>
+    </view>
   </view>
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
-      获取头像昵称
-    </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <!-- 功能模块 -->
+  <view class="function-part">
+    <view class="function-item">
+       <label></label>
+    </view>
   </view>
 </view>
