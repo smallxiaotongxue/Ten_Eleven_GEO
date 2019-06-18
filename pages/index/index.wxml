@@ -1,31 +1,78 @@
 <!-- index.wxml -->
 <view class="index-page">
-  <!-- 广告banner -->
+  <!-- banner -->
   <view class="banner-wrap">
-    <swiper 
-      circular="{{true}}" 
-      autoplay="{{true}}"
-      previous-margin="30px" 
-      next-margin="30px"
-      bindchange="bannerChange">
+    <swiper circular="{{true}}" autoplay="{{true}}" previous-margin="30px" next-margin="30px" bindchange="bannerChange">
       <block wx:for="{{bannerImgUrls}}" wx:key="index">
         <swiper-item>
           <view class="banner-item">
-            <image class="{{currBannerIndex === index ? 'active banner-img': 'banner-img' }}" src="{{item}}"/>
+            <image class="{{currBannerIndex === index ? 'active banner-img': 'banner-img' }}" src="{{item}}" />
           </view>
         </swiper-item>
       </block>
     </swiper>
-    <view  class="banner-dots">
-      <view class="dot {{currBannerIndex === index ? 'active' : ''}}" wx:for="{{bannerImgUrls}}" wx:key="index">
-      </view>
+    <view class="banner-dots">
+      <view class="dot {{currBannerIndex === index ? 'active' : ''}}" wx:for="{{bannerImgUrls}}" wx:key="index"></view>
     </view>
+  </view>
+  <!-- 功能模块 -->
+
+  <view class="function-title">
+    <view class="title-name">功能列表</view>
+  </view>
+  <view class="function-part">
+    <van-row gutter="15">
+      <van-col span="6">
+        <view class="function-item">
+           <view class="iconfont iconread icon"></view>
+          <view class="text">课程表</view>
+        </view>
+      </van-col>
+      <van-col span="6">
+        <view class="function-item">
+           <view class="iconfont iconread icon"></view>
+          <view class="text">我的学习</view>
+        </view>
+      </van-col>
+      <van-col span="6">
+        <view class="function-item">
+          <view class="iconfont iconread icon"></view>
+          <view class="text">我的学习</view>
+        </view>
+      </van-col>
+      <van-col span="6">
+        <view class="function-item">
+          <view class="iconfont iconread icon"></view>
+          <view class="text">我的学习</view>
+        </view>
+      </van-col>
+    </van-row>
   </view>
 
-  <!-- 功能模块 -->
-  <view class="function-part">
-    <view class="function-item">
-       <label></label>
-    </view>
+  <!-- 公告 -->
+  <view class="ad">
+    <image class="ad-img" src="{{AD_IMG}}"/>
   </view>
+
+  <!-- 资讯推荐 -->
+  <view class="function-title">
+    <view class="title-name">热点推荐</view>
+  </view>
+  <view class="articles-contents">
+        <view class="articles-list">
+          <view class="list-item" wx:for="{{[1,2,3]}}" :key="index">
+            <view class="item-head">
+              <view class="head-left">
+                <image class="upload-icon" src="/static/images/user.png" background-size="cover" alt="icon"></image>
+                <text class="upload-name">CopPan</text>
+              </view>
+              <text class="upload-module-name">Java</text>
+            </view>
+            <view class="item-body">
+              <view class="news-title">Java 8新的时间日期库的20个使用示例</view>
+              <view class="news-intro">有人问我学习一个新库的最佳途径是什么？我的回答是，就是在实际项目中那样去使用它。在一个真实的项目中会有各种各样的需求，这会促使开发人员去探索和研究这个新库。简言之，只有任务本身才会真正促使你去探索及学习。java 8的新的日期及时间API也是一样。</view>
+            </view>
+          </view>
+        </view>
+      </view>
 </view>
