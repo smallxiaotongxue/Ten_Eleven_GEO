@@ -1,0 +1,22 @@
+{
+  "name": "ten_eleven_geo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smallxiaotongxue/Ten_Eleven_GEO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smallxiaotongxue/Ten_Eleven_GEO/issues"
+  },
+  "homepage": "https://github.com/smallxiaotongxue/Ten_Eleven_GEO#readme",
+  "dependencies": {
+    "vant-weapp": "^0.5.14"
+  }
+}

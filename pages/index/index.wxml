@@ -1,7 +1,18 @@
-<!--index.wxml-->
-<view class="container">
+<!-- index.wxml -->
+<view class="index-page">
+  <view class="banner-wrap">
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}">
+        <swiper-item wx:for="{{imgUrls}}">
+          <view class="banner-item">
+            <image class="banner-img" style="height: 150px" src="{{item}}"/>
+          </view>
+        </swiper-item>
+    </swiper>
+  </view>
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      获取头像昵称
+    </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
