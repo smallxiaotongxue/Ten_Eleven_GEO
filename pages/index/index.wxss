@@ -63,7 +63,11 @@
 
 .function-part .function-item .icon {
   font-size: 32px;
-  color: #999;
+  color: #999999;
+}
+
+.function-part .function-item .text {
+  
 }
 
 .function-title {

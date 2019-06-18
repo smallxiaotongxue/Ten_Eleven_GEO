@@ -19,5 +19,15 @@ Page({
     this.setData({
       currBannerIndex: e.detail.current
     });
+  },
+  toPage: function (e) {
+    const URL_MAP = {
+      'class': '../schedule/schedule'
+    };
+    let url = URL_MAP[e.currentTarget.dataset['type']];
+
+    wx.navigateTo({
+      url
+    })
   }
 })

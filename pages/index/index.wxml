@@ -24,26 +24,26 @@
     <van-row gutter="15">
       <van-col span="6">
         <view class="function-item">
+           <view class="iconfont iconhome-fill icon"></view>
+          <view class="text">学习</view>
+        </view>
+      </van-col>
+      <van-col span="6">
+        <view class="function-item" data-type="class" bindtap="toPage">
            <view class="iconfont iconread icon"></view>
           <view class="text">课程表</view>
         </view>
       </van-col>
       <van-col span="6">
         <view class="function-item">
-           <view class="iconfont iconread icon"></view>
-          <view class="text">我的学习</view>
+          <view class="iconfont iconsolution icon"></view>
+          <view class="text">班级排名</view>
         </view>
       </van-col>
       <van-col span="6">
         <view class="function-item">
-          <view class="iconfont iconread icon"></view>
-          <view class="text">我的学习</view>
-        </view>
-      </van-col>
-      <van-col span="6">
-        <view class="function-item">
-          <view class="iconfont iconread icon"></view>
-          <view class="text">我的学习</view>
+          <view class="iconfont iconedit-fill icon"></view>
+          <view class="text">习题</view>
         </view>
       </van-col>
     </van-row>
@@ -60,7 +60,7 @@
   </view>
   <view class="articles-contents">
         <view class="articles-list">
-          <view class="list-item" wx:for="{{[1,2,3]}}" :key="index">
+          <view class="list-item" wx:for="{{[1,2,3]}}" wx:key="index">
             <view class="item-head">
               <view class="head-left">
                 <image class="upload-icon" src="/static/images/user.png" background-size="cover" alt="icon"></image>
