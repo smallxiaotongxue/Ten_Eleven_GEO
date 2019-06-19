@@ -1,4 +1,9 @@
 {
-  "navigationBarTitleText": "课程表",
-  "usingComponents": {}
+  "usingComponents": {},
+  "disableScroll": true,
+  "backgroundColor": "#F66775",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#F66775",
+  "navigationBarTitleText": "张老师课程表",
+  "navigationBarTextStyle": "white"
 }

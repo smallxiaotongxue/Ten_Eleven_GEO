@@ -64,13 +64,13 @@
             <view class="item-head">
               <view class="head-left">
                 <image class="upload-icon" src="/static/images/user.png" background-size="cover" alt="icon"></image>
-                <text class="upload-name">CopPan</text>
+                <text class="upload-name">李一良</text>
               </view>
-              <text class="upload-module-name">Java</text>
+              <text class="upload-module-name">焦点</text>
             </view>
             <view class="item-body">
-              <view class="news-title">Java 8新的时间日期库的20个使用示例</view>
-              <view class="news-intro">有人问我学习一个新库的最佳途径是什么？我的回答是，就是在实际项目中那样去使用它。在一个真实的项目中会有各种各样的需求，这会促使开发人员去探索和研究这个新库。简言之，只有任务本身才会真正促使你去探索及学习。java 8的新的日期及时间API也是一样。</view>
+              <view class="news-title">柴达木PK火星 火星上是否有生命？</view>
+              <view class="news-intro">2018年8月，作者在柴达木盆地的西部进行了类火星环境的考察工作，考察队带回了大量可以和火星环境相类比的柴达木盆地的照片，通过对两个行星相似度很高的地表环境影像的类比解读，我们对火星上是否存在生命现象生起了越来越强烈的好奇。来自《中国国家地理》2019年3期</view>
             </view>
           </view>
         </view>
