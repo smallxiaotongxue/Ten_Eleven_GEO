@@ -1,25 +1,24 @@
 <!-- pages/schedule/schedule.wxml -->
 <view class="schedule-page">
     <image class="decorate" mode="aspectFit" src="/static/images/schedule/zhuangshi.png"></image>
-    <scroll-view class="scroll-all" scroll-y="true">
-        <view class="time" style="top:{{mTop}}px;left: {{mLeft}}px;height: {{timeHeight}};">
-            <view bindtap="modifyTime" class="class-item-time" style="height: {{mHeight}}px;" wx:if="{{mindex<maxClassNum?true:false}}" wx:for="{{items}}" wx:for-index="mindex" wx:key="mindex">
-                {{mindex+1}}({{classNInfos[0].infos[mindex].startTime}})
+    <view class="scroll-all">
+        <view class="time">
+            <view bindtap="modifyTime" class="class-item-time" style="height: {{mHeight}}px;" wx:for="{{classNameList}}" wx:key="index">
+                {{item.title}}
             </view>
         </view>
-        <scroll-view class="scroll-all-bg" scroll-x="true">
+        <scroll-view class="scroll-all-bg" scroll-x="true" scroll-y="true">
             <view class="time-part">
                 <view class="title-item" wx:for="{{WEEK_TITLE}}" wx:key="index">{{item}}</view>
             </view>
-            <view class="class-part">
-                <view wx:for="{{items}}" wx:for-index="mindex" wx:key="mindex">
-                    <view bindtap="clickItem" class="class-item" id="{{index}}{{mindex}}" style="background:{{item.infos[mindex].background}} ;height: {{mHeight}}px;line-height: {{mHeight}}px; margin-left: {{index==0?12:0}}vw" wx:for="{{classNInfos}}" wx:key="index">
+            <view>
+                <view wx:for="{{classNameList}}" wx:for-index="mindex" wx:key="mindex">
+                    <view bindtap="clickItem" class="class-item" id="{{index}}{{mindex}}" style="background:{{item.infos[mindex].background}} ;height: {{mHeight}}px;line-height: {{mHeight}}px;" wx:for="{{classNInfos}}" wx:key="index">
                         {{item.infos[mindex].name}}
                     </view>
                 </view>
             </view>
         </scroll-view>
-
         <view class="float-btn-part">
             <image bindtap="addClass" class="add-btn" src="/static/images/schedule/icon_add@3x.png"></image>
             <image bindtap="clearClass" class="add-btn" src="/static/images/schedule/icon_qingkong@3x.png"></image>
@@ -27,7 +26,7 @@
             <image bindtap="clickGuide1" class="guide1" mode="aspectFit" src="/static/images/schedule/tishi_tianj@3x.png" wx:if="{{showGuide1}}"></image>
             <image bindtap="clickGuide2" class="guide2" mode="aspectFit" src="/static/images/schedule/tishi_qingk@3x.png" wx:if="{{showGuide2}}"></image> -->
         </view>
-    </scroll-view>
+    </view>
 </view>
 <button class="add_class" openType="share">
     <image mode="aspectFit" src="/static/images/schedule/icon_share@3x.png" style="width: 330rpx;height:84rpx"></image>

@@ -32,6 +32,8 @@ page {
 
 .scroll-all-bg {
     padding: 25px 5px;
+    margin-left: 13vw;
+    width: 79vw;
     height: 85vh;
     white-space: nowrap;
     box-sizing: border-box;
@@ -65,11 +67,17 @@ page {
     color: #fff;
 }
 
+.time {
+    position: absolute;
+    left: 1px;
+    width: 12vw;
+    margin-top: 55px;
+}
+
 .class-item-time {
     background: #fff;
     width: 12vw;
     box-sizing: border-box;
-    vertical-align: middle;
     text-align: center;
     font-size: 9px;
     color: #000;
@@ -79,25 +87,6 @@ page {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.time {
-    position: absolute;
-    width: 12vw;
-}
-
-.class-item_ {
-    background: #fff;
-    width: 12vw;
-    height: 11vw;
-    box-sizing: border-box;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 11vw;
-    text-align: center;
-    font-size: 9px;
-    color: #000;
-    z-index: 1;
 }
 
 .empty {

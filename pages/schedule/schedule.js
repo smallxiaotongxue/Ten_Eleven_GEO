@@ -13,63 +13,41 @@ Page({
       "星期六",
       "星期天"
     ],
-    hiddenTime: false,
-    timeHeight: 0,
-    mLeft: 0,
-    mTop: 0,
-    mWidth: 60,
     mHeight: 60,
-    maxClassNum: 12,
-    newUser: "false",
-    id: "",
-    items: [
+    maxClassNum: 11,
+    classNameList: [
       {
-        url: "http://127.0.0.1/1.flv",
         title: "第一节课"
       },
       {
-        url: "http://127.0.0.1/2.flv",
         title: "第二节课"
       },
       {
-        url: "http://127.0.0.1/2.flv",
         title: "第三节课"
       },
       {
-        url: "http://127.0.0.1/2.flv",
         title: "第四节课"
       },
       {
-        url: "http://127.0.0.1/2.flv",
         title: "第五节课"
       },
       {
-        url: "http://127.0.0.1/2.flv",
         title: "第六节课"
       },
       {
-        url: "http://127.0.0.1/2.flv",
         title: "第七节课"
       },
       {
-        url: "http://127.0.0.1/2.flv",
         title: "第八节课"
       },
       {
-        url: "http://127.0.0.1/1.flv",
-        title: "第九节课"
+        title: "晚自习一"
       },
       {
-        url: "http://127.0.0.1/2.flv",
-        title: "10"
+        title: "晚自习二"
       },
       {
-        url: "http://127.0.0.1/2.flv",
-        title: "11"
-      },
-      {
-        url: "http://127.0.0.1/2.flv",
-        title: "12"
+        title: "晚自习三"
       }
     ],
     classNInfos: [
@@ -877,156 +855,34 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    this.setData({
-      mTop: 34 / (750 / wx.getSystemInfoSync().windowWidth) + 40 + 44,
-      mLeft: 0.03 * wx.getSystemInfoSync().windowWidth + 3,
-      timeHeight: 0.8 * wx.getSystemInfoSync().windowHeight - 45
-    }),
-      console.log("onLoad"),
-      this.onGetOpenid();
+    this.onGetOpenid();
   },
   addClass: function() {
-    console.log("that.data.newUser: " + this.data.newUser),
-      console.log("that.data.newUser: " + this.data.id);
-    var e = this;
-    wx.navigateTo({
-      url: "../addClass/addClass?newUser=" + e.data.newUser + "&id=" + e.data.id
-    });
+    
   },
   clearClass: function() {
-    var e = wx.cloud.database(),
-      a = this;
-    a.data.newUser
-      ? wx.showModal({
-          title: "提示",
-          content: "您确定要清空您的课程表吗?",
-          success: function(f) {
-            e.collection("class_schedule")
-              .doc(a.data.id)
-              .remove({
-                success: function() {
-                  wx.showToast({
-                    title: "清空成功"
-                  }),
-                    console.log(getApp().classInfo),
-                    (getApp().globalData.classNInfos = getApp().data.classInfo),
-                    a.setData({
-                      newUser: !0,
-                      classNInfos: getApp().globalData.classNInfos
-                    });
-                }
-              });
-          }
-        })
-      : wx.showModal({
-          title: "提示",
-          content: "您的课程表是空的!"
-        });
+    
   },
   onGetOpenid: function() {
-    // wx.showLoading({
-    //   title: "",
-    //   mask: !0
-    // });
-    // var e = this;
-    // wx.cloud.callFunction({
-    //     name: "login",
-    //     data: {},
-    //     success: function(a) {
-    //         getApp().globalData.mOpenid = a.result.openid, wx.cloud.database().collection("class_schedule").where({
-    //             _openid: a.result.openid
-    //         }).get({
-    //             success: function(a) {
-    //                 wx.hideLoading(), console.log("success"), 0 == a.data.length ? (e.setData({
-    //                     newUser: "true",
-    //                     maxClassNum: e.data.classNInfos[0].maxClass,
-    //                     showGuide: !0,
-    //                     showGuide1: !0,
-    //                     showGuide2: !0
-    //                 }), e.setWidthAndHeight(), getApp().globalData.classNInfos = e.data.classNInfos) : (console.log("非新用户:id ]" + a.data[0]._id),
-    //                 getApp().globalData._id = a.data[0]._id, getApp().globalData.classNInfos = a.data[0].classInfos,
-    //                 e.setData({
-    //                     classNInfos: a.data[0].classInfos,
-    //                     id: a.data[0]._id,
-    //                     maxClassNum: a.data[0].classInfos[0].maxClass
-    //                 }), e.setWidthAndHeight()), console.log(a.data[0]), console.log(e.data.id);
-    //             },
-    //             fail: function(e) {
-    //                 console.log(e), wx.hideLoading();
-    //             }
-    //         }), console.log("[云函数] [login] user openid: ", a.result.openid);
-    //     },
-    //     fail: function(e) {
-    //         console.error("[云函数] [login] 调用失败", e);
-    //     }
-    // });
+    this.setWidthAndHeight();
   },
   clickItem: function(e) {
-    var a = void 0;
-    if (
-      "" !=
-      (a =
-        2 == e.target.id.length
-          ? getApp().globalData.classNInfos[e.target.id.substring(0, 1)].infos[
-              e.target.id.substring(1, 2)
-            ]
-          : getApp().globalData.classNInfos[e.target.id.substring(0, 1)].infos[
-              e.target.id.substring(1, 3)
-            ]).name
-    ) {
-      var f = this;
-      console.log("clickItem" + f.data.id),
-        wx.navigateTo({
-          url:
-            "../modifyClass/modifyClass?newUser=false&id=" +
-            f.data.id +
-            "&className=" +
-            a.name +
-            "&classRoomNum=" +
-            a.classRoomNum +
-            "&teacher=" +
-            a.teacher +
-            "&background=" +
-            a.background +
-            "&week=" +
-            e.target.id.substring(0, 1) +
-            "&classIndex=" +
-            (2 == e.target.id.length
-              ? e.target.id.substring(1, 2)
-              : e.target.id.substring(1, 3))
-        });
-    }
+    
   },
   modifyTime: function() {
-    var e = this;
-    e.setData({
-      hiddenTime: !0
-    }),
-      console.log("gggggg : id" + e.data.id),
-      wx.navigateTo({
-        url:
-          "../modifyTime/modifyTime?newUser=" +
-          e.data.newUser +
-          "&id=" +
-          e.data.id
-      }),
-      e.setWidthAndHeight();
+    
   },
   setWidthAndHeight: function() {
-    var e = this;
-    e.data.maxClassNum <= 8
-      ? (e.setData({
-          mHeight: (0.8 * wx.getSystemInfoSync().windowHeight - 45) / 8 - 1,
-          hiddenTime: !0
-        }),
-        console.log(e.data.mHeight))
-      : (e.setData({
-          mHeight:
-            (0.8 * wx.getSystemInfoSync().windowHeight - 55) /
-            e.data.maxClassNum,
-          hiddenTime: !0
-        }),
-        console.log(e.data.mHeight));
+    if (this.data.maxClassNum > 8) {
+      this.setData({
+        mHeight: (0.8 * wx.getSystemInfoSync().windowHeight - 55) / this.data.maxClassNum
+      });
+    } else {
+      this.setData({
+        mHeight: (0.8 * wx.getSystemInfoSync().windowHeight - 55) / 8 - 1
+      });
+    }
+    console.log(this.data.mHeight);
   },
   onShareAppMessage: function() {
     return {
