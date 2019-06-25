@@ -50,13 +50,13 @@ Page({
         title: "晚自习三"
       }
     ],
-    classNInfos: [
+    CLASS_INFO_LIST: [
       {
         name: "周1课程信息",
         maxClass: 12,
         infos: [
           {
-            name: "",
+            name: "地理",
             background: "#ffffff",
             classRoomNum: "",
             teacher: "",

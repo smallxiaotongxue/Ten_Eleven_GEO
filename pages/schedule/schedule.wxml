@@ -11,11 +11,19 @@
             <view class="time-part">
                 <view class="title-item" wx:for="{{WEEK_TITLE}}" wx:key="index">{{item}}</view>
             </view>
-            <view>
-                <view wx:for="{{classNameList}}" wx:for-index="mindex" wx:key="mindex">
-                    <view bindtap="clickItem" class="class-item" id="{{index}}{{mindex}}" style="background:{{item.infos[mindex].background}} ;height: {{mHeight}}px;line-height: {{mHeight}}px;" wx:for="{{classNInfos}}" wx:key="index">
-                        {{item.infos[mindex].name}}
-                    </view>
+            <view class="class-wrap">
+                <view class="class-ul" wx:for="{{CLASS_INFO_LIST}}" wx:key="index">
+                    <view 
+                        bindtap="clickItem" 
+                        class="class-item" 
+                        id="{{index}}-{{mindex}}"
+                        style="background:{{item.infos[mindex].background}}; height: {{mHeight - 2}}px; line-height: {{mHeight - 2}}px;"
+                        wx:for="{{item.infos}}"
+                        wx:key="mindex"
+                        wx:for-index="mindex"
+                    >
+                    <text>{{item.infos[mindex].name}}</text>
+                </view>
                 </view>
             </view>
         </scroll-view>
