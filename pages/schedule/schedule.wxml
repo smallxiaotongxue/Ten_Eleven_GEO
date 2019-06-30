@@ -17,13 +17,14 @@
                         bindtap="clickItem" 
                         class="class-item" 
                         id="{{index}}-{{mindex}}"
-                        style="background:{{item.infos[mindex].background}}; height: {{mHeight - 2}}px; line-height: {{mHeight - 2}}px;"
+                        style="background:{{mItem.background}}; height: {{mHeight - 2}}px; line-height: {{mHeight - 2}}px;"
                         wx:for="{{item.infos}}"
+                        wx:for-item="mItem"
                         wx:key="mindex"
                         wx:for-index="mindex"
                     >
-                    <text>{{item.infos[mindex].name}}</text>
-                </view>
+                        <text>{{mItem.name}}</text>
+                    </view>
                 </view>
             </view>
         </scroll-view>
