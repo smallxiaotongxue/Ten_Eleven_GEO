@@ -1,0 +1,106 @@
+/* pages/schedule_modify/schedule_modify.wxss */
+
+page {
+    background: #f66775;
+}
+
+.schedule-modify {
+    margin-top: 20rpx;
+}
+
+.bg_addClass {
+    margin-top: 10rpx;
+    margin-left: 5vw;
+    width: 90vw;
+    height: 45px;
+    border: 4rpx solid #000;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.leftView {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.kemu {
+    margin-left: 10px;
+    width: 24px;
+    height: 100%;
+}
+
+.back {
+    width:48rpx;
+    height:48rpx;
+    margin: 0 10px;
+}
+
+.mtext {
+    margin-left: 5px;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.mtext {
+    width: auto;
+    height: 45px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.bg_bottom {
+    margin-top: 40rpx;
+    margin-left: 5vw;
+    width: 90vw;
+    height: auto;
+}
+
+.bg_addTime {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border: 4rpx solid #000;
+    border-radius: 15px;
+}
+
+.bg_add {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fff;
+    display: flex;
+    border-bottom: 1px #000 solid;
+}
+
+.saveView {
+    margin-top: 40px;
+    width: 100%;
+    height: 51px;
+    background: #00000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shareBtn {
+    width: 42.5vw;
+    height: 51px;
+    display: flex;
+    background-color: #00000000;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    background: none;
+}

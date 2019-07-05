@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "backgroundColor": "#F66775",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#F66775",
+  "navigationBarTitleText": "修改节数",
+  "navigationBarTextStyle": "white"
+}

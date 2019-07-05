@@ -60,6 +60,7 @@ Page({
     
   },
   onGetOpenid: function() {
+    this.initData();
     this.setWidthAndHeight();
   },
   initData: function () {
@@ -76,10 +77,13 @@ Page({
     });
   },
   clickItem: function(e) {
-    
+    console.log(e);
   },
-  modifyTime: function() {
-    
+  modifyTime: function(e) {
+    wx.navigateTo({
+      url: "../schedule_modify/schedule_modify"
+    }),
+    this.setWidthAndHeight();
   },
   setWidthAndHeight: function() {
     if (this.data.maxClassNum > 8) {
@@ -95,7 +99,7 @@ Page({
   },
   onShareAppMessage: function() {
     return {
-      title: "你的好友给你分享了课程表，赶紧看看吧！",
+      title: "张老师给你分享了课程表，赶紧看看吧！",
       path: "/pages/showClass/showClass?id=" + getApp().globalData.mOpenid
     };
   },

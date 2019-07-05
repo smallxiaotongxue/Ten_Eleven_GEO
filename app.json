@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/schedule/schedule",
+    "pages/schedule_modify/schedule_modify",
     "pages/logs/logs"
   ],
   "window": {

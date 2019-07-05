@@ -1,0 +1,35 @@
+<!--pages/schedule_modify/schedule_modify.wxml-->
+
+<view class="schedule-modify">
+    <picker bindchange="bindPickerChange" range="{{classNum}}" value="{{maxClassNum - 1}}">
+        <view class="bg_addClass">
+            <view class="leftView">
+                <image class="kemu" mode="aspectFit" src="/static/images/schedule/icon_setting.png"></image>
+                <view class="mtext">设置节数</view>
+            </view>
+            <view class="leftView">
+                <view class="mtext">{{maxClassNum}}节</view>
+                <image class="back" mode="aspectFit" src="/static/images/schedule/back.png"></image>
+            </view>
+        </view>
+    </picker>
+    <view class="bg_bottom">
+        <view class="bg_addTime">
+            <scroll-view scrollY style="height:50vh;">
+                <view wx:for="{{classInfos[0].infos}}" wx:key="index">
+                    <view class="bg_add" wx:if="{{index<maxClassNum?true:false}}">
+                        <view class="mtext">第{{index+1}}节</view>
+                        <picker bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" id="{{index}}" mode="multiSelector" range="{{multiArray}}" value="{{multiIndex}}">
+                            <view class="mtext_" style=" align-items: flex-right;">{{item.startTime}}~{{item.endTime}}</view>
+                        </picker>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="saveView">
+            <view bindtap="saveData" class="shareBtn">
+                <image mode="aspectFit" src="/static/images/schedule/icon_save.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

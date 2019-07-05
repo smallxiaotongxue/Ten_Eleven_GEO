@@ -51,12 +51,19 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "课程表",
 					"pathName": "pages/schedule/schedule",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "修改课程表节数",
+					"pathName": "pages/schedule_modify/schedule_modify",
 					"scene": null
 				}
 			]
