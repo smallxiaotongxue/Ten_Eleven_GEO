@@ -8,7 +8,7 @@ page {
     margin-top: 20rpx;
 }
 
-.bg_addClass {
+.bg-addClass {
     margin-top: 10rpx;
     margin-left: 5vw;
     width: 90vw;
@@ -41,30 +41,30 @@ page {
 }
 
 .mtext {
-    margin-left: 5px;
+    color: #000000;
     font-size: 14px;
-    align-items: center;
+    margin-left: 10px;
+    height: 45px;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.mtext {
-    width: auto;
-    height: 45px;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    color: #000000;
+.intro-title {
+    margin: 20rpx 20rpx 20rpx 5vw;
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #fff;
 }
 
-.bg_bottom {
-    margin-top: 40rpx;
+.bg-bottom {
+    margin-top: 10rpx;
     margin-left: 5vw;
     width: 90vw;
     height: auto;
 }
 
-.bg_addTime {
+.bg-addTime {
     width: 100%;
     height: auto;
     background: #fff;
@@ -72,7 +72,7 @@ page {
     border-radius: 15px;
 }
 
-.bg_add {
+.bg-add {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     height: 45px;
@@ -94,7 +94,7 @@ page {
     justify-content: space-around;
 }
 
-.shareBtn {
+.save-btn {
     width: 42.5vw;
     height: 51px;
     display: flex;

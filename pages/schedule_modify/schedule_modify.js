@@ -1,36 +1,44 @@
 // pages/schedule_modify/schedule_modify.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
     id: "",
-        classInfos: [],
-        newUser: "false",
-        openId: "",
-        classNum: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ],
-        maxClassNum: 11,
-        multiArray: [ [ "01时", "02时", "03时", "04时", "05时", "06时", "07时", "08时", "09时", "10时", "11时", "12时", "13时", "14时", "15时", "16时", "17时", "18时", "19时", "20时", "21时", "22时", "23时" ], [ "00分", "01分", "02分", "03分", "04分", "05分", "06分", "07分", "08分", "09分", "10分", "11分", "12分", "13分", "14分", "15分", "16分", "17分", "18分", "19分", "20分", "21分", "22分", "23分", "24分", "25分", "26分", "27分", "28分", "29分", "30分", "31分", "32分", "33分", "34分", "35分", "36分", "37分", "38分", "39分", "40分", "41分", "42分", "43分", "44分", "45分", "46分", "47分", "48分", "49分", "50分", "51分", "52分", "53分", "54分", "55分", "56分", "57分", "58分", "59分" ], [ "01时", "02时", "03时", "04时", "05时", "06时", "07时", "08时", "09时", "10时", "11时", "12时", "13时", "14时", "15时", "16时", "17时", "18时", "19时", "20时", "21时", "22时", "23时" ], [ "00分", "01分", "02分", "03分", "04分", "05分", "06分", "07分", "08分", "09分", "10分", "11分", "12分", "13分", "14分", "15分", "16分", "17分", "18分", "19分", "20分", "21分", "22分", "23分", "24分", "25分", "26分", "27分", "28分", "29分", "30分", "31分", "32分", "33分", "34分", "35分", "36分", "37分", "38分", "39分", "40分", "41分", "42分", "43分", "44分", "45分", "46分", "47分", "48分", "49分", "50分", "51分", "52分", "53分", "54分", "55分", "56分", "57分", "58分", "59分" ] ],
-        multiIndex: [ 7, 0, 8, 0 ]
+    openId: "",
+    CLASS_NUM_INFOS: [
+      {
+        title: '第一节课',
+        startTime: "08:00",
+        endTime: "09:00"
+      },
+      {
+        title: '第二节课',
+        startTime: "09:00",
+        endTime: "10:00"
+      }
+    ],
+    CLASS_NUM: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    MAX_CLASS_NUM: 11,
+    TIME_MUTLI_ARRAY: [],
+    TIME_MUTLI_INDEX: [7, 0, 8, 0]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {},
 
-  },
-  
-  initPage () {
-
-  },
+  initPage() {},
 
   bindPickerChange: function(a) {
     var num = parseInt(a.detail.value) + 1;
     this.setData({
-        maxClassNum: num
+      maxClassNum: num
     });
+  },
+
+  handleInfoMessage () {
     for (var s in this.data.classInfos) {
       this.data.classInfos[s].maxClass = parseInt(t);
     }
@@ -39,49 +47,35 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
-
-  },
+  onReady: function() {},
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-
-  },
+  onShow: function() {},
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
-
-  },
+  onHide: function() {},
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
-
-  },
+  onUnload: function() {},
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
-
-  },
+  onPullDownRefresh: function() {},
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
-
-  },
+  onReachBottom: function() {},
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
-  }
-})
+  onShareAppMessage: function() {}
+});

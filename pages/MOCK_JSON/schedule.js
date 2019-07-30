@@ -8,8 +8,8 @@ export const CLASS_INFO_LIST = [
         background: "#3388FF",
         classRoomNum: "",
         teacher: "",
-        startTime: "08:10",
-        endTime: "09:10",
+        startTime: "08:00",
+        endTime: "09:00",
         hidden: "false"
       },
       {
@@ -17,8 +17,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "09:10",
-        endTime: "10:10",
+        startTime: "09:00",
+        endTime: "10:00",
         hidden: "false"
       },
       {
@@ -26,8 +26,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "10:10",
-        endTime: "11:10",
+        startTime: "10:00",
+        endTime: "11:00",
         hidden: "false"
       },
       {
@@ -35,8 +35,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "11:10",
-        endTime: "12:10",
+        startTime: "11:00",
+        endTime: "12:00",
         hidden: "false"
       },
       {
@@ -44,8 +44,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "13:10",
-        endTime: "14:10",
+        startTime: "13:00",
+        endTime: "14:00",
         hidden: "false"
       },
       {
@@ -53,8 +53,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "14:10",
-        endTime: "15:10",
+        startTime: "14:00",
+        endTime: "15:00",
         hidden: "false"
       },
       {
@@ -62,8 +62,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "15:10",
-        endTime: "16:10",
+        startTime: "15:00",
+        endTime: "16:00",
         hidden: "false"
       },
       {
@@ -71,8 +71,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "17:10",
-        endTime: "18:10",
+        startTime: "17:00",
+        endTime: "18:00",
         hidden: "false"
       },
       {
@@ -80,8 +80,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "18:10",
-        endTime: "19:10",
+        startTime: "18:00",
+        endTime: "19:00",
         hidden: "false"
       },
       {
@@ -89,8 +89,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "20:10",
-        endTime: "21:10",
+        startTime: "20:00",
+        endTime: "21:00",
         hidden: "false"
       },
       {
@@ -98,8 +98,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "21:10",
-        endTime: "22:10",
+        startTime: "21:00",
+        endTime: "22:00",
         hidden: "false"
       }
     ]
@@ -112,8 +112,8 @@ export const CLASS_INFO_LIST = [
         background: "#3388FF",
         classRoomNum: "",
         teacher: "",
-        startTime: "08:10",
-        endTime: "09:10",
+        startTime: "08:00",
+        endTime: "09:00",
         hidden: "false"
       },
       {
@@ -121,8 +121,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "09:10",
-        endTime: "10:10",
+        startTime: "09:00",
+        endTime: "10:00",
         hidden: "false"
       },
       {
@@ -130,8 +130,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "10:10",
-        endTime: "11:10",
+        startTime: "10:00",
+        endTime: "11:00",
         hidden: "false"
       },
       {
@@ -139,8 +139,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "11:10",
-        endTime: "12:10",
+        startTime: "11:00",
+        endTime: "12:00",
         hidden: "false"
       },
       {
@@ -148,8 +148,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "13:10",
-        endTime: "14:10",
+        startTime: "13:00",
+        endTime: "14:00",
         hidden: "false"
       },
       {
@@ -157,8 +157,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "14:10",
-        endTime: "15:10",
+        startTime: "14:00",
+        endTime: "15:00",
         hidden: "false"
       },
       {
@@ -166,8 +166,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "15:10",
-        endTime: "16:10",
+        startTime: "15:00",
+        endTime: "16:00",
         hidden: "false"
       },
       {
@@ -175,8 +175,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "17:10",
-        endTime: "18:10",
+        startTime: "17:00",
+        endTime: "18:00",
         hidden: "false"
       },
       {
@@ -184,8 +184,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "18:10",
-        endTime: "19:10",
+        startTime: "18:00",
+        endTime: "19:00",
         hidden: "false"
       },
       {
@@ -193,8 +193,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "20:10",
-        endTime: "21:10",
+        startTime: "20:00",
+        endTime: "21:00",
         hidden: "false"
       },
       {
@@ -202,8 +202,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "21:10",
-        endTime: "22:10",
+        startTime: "21:00",
+        endTime: "22:00",
         hidden: "false"
       }
     ]
@@ -216,8 +216,8 @@ export const CLASS_INFO_LIST = [
         background: "#3388FF",
         classRoomNum: "",
         teacher: "",
-        startTime: "08:10",
-        endTime: "09:10",
+        startTime: "08:00",
+        endTime: "09:00",
         hidden: "false"
       },
       {
@@ -225,8 +225,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "09:10",
-        endTime: "10:10",
+        startTime: "09:00",
+        endTime: "10:00",
         hidden: "false"
       },
       {
@@ -234,8 +234,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "10:10",
-        endTime: "11:10",
+        startTime: "10:00",
+        endTime: "11:00",
         hidden: "false"
       },
       {
@@ -243,8 +243,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "11:10",
-        endTime: "12:10",
+        startTime: "11:00",
+        endTime: "12:00",
         hidden: "false"
       },
       {
@@ -252,8 +252,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "13:10",
-        endTime: "14:10",
+        startTime: "13:00",
+        endTime: "14:00",
         hidden: "false"
       },
       {
@@ -261,8 +261,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "14:10",
-        endTime: "15:10",
+        startTime: "14:00",
+        endTime: "15:00",
         hidden: "false"
       },
       {
@@ -270,8 +270,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "15:10",
-        endTime: "16:10",
+        startTime: "15:00",
+        endTime: "16:00",
         hidden: "false"
       },
       {
@@ -279,8 +279,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "17:10",
-        endTime: "18:10",
+        startTime: "17:00",
+        endTime: "18:00",
         hidden: "false"
       },
       {
@@ -288,8 +288,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "18:10",
-        endTime: "19:10",
+        startTime: "18:00",
+        endTime: "19:00",
         hidden: "false"
       },
       {
@@ -297,8 +297,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "20:10",
-        endTime: "21:10",
+        startTime: "20:00",
+        endTime: "21:00",
         hidden: "false"
       },
       {
@@ -306,8 +306,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "21:10",
-        endTime: "22:10",
+        startTime: "21:00",
+        endTime: "22:00",
         hidden: "false"
       }
     ]
@@ -320,8 +320,8 @@ export const CLASS_INFO_LIST = [
         background: "#3388FF",
         classRoomNum: "",
         teacher: "",
-        startTime: "08:10",
-        endTime: "09:10",
+        startTime: "08:00",
+        endTime: "09:00",
         hidden: "false"
       },
       {
@@ -329,8 +329,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "09:10",
-        endTime: "10:10",
+        startTime: "09:00",
+        endTime: "10:00",
         hidden: "false"
       },
       {
@@ -338,8 +338,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "10:10",
-        endTime: "11:10",
+        startTime: "10:00",
+        endTime: "11:00",
         hidden: "false"
       },
       {
@@ -347,8 +347,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "11:10",
-        endTime: "12:10",
+        startTime: "11:00",
+        endTime: "12:00",
         hidden: "false"
       },
       {
@@ -356,8 +356,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "13:10",
-        endTime: "14:10",
+        startTime: "13:00",
+        endTime: "14:00",
         hidden: "false"
       },
       {
@@ -365,8 +365,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "14:10",
-        endTime: "15:10",
+        startTime: "14:00",
+        endTime: "15:00",
         hidden: "false"
       },
       {
@@ -374,8 +374,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "15:10",
-        endTime: "16:10",
+        startTime: "15:00",
+        endTime: "16:00",
         hidden: "false"
       },
       {
@@ -383,8 +383,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "17:10",
-        endTime: "18:10",
+        startTime: "17:00",
+        endTime: "18:00",
         hidden: "false"
       },
       {
@@ -392,8 +392,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "18:10",
-        endTime: "19:10",
+        startTime: "18:00",
+        endTime: "19:00",
         hidden: "false"
       },
       {
@@ -401,8 +401,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "20:10",
-        endTime: "21:10",
+        startTime: "20:00",
+        endTime: "21:00",
         hidden: "false"
       },
       {
@@ -410,8 +410,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "21:10",
-        endTime: "22:10",
+        startTime: "21:00",
+        endTime: "22:00",
         hidden: "false"
       }
     ]
@@ -424,8 +424,8 @@ export const CLASS_INFO_LIST = [
         background: "#3388FF",
         classRoomNum: "",
         teacher: "",
-        startTime: "08:10",
-        endTime: "09:10",
+        startTime: "08:00",
+        endTime: "09:00",
         hidden: "false"
       },
       {
@@ -433,8 +433,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "09:10",
-        endTime: "10:10",
+        startTime: "09:00",
+        endTime: "10:00",
         hidden: "false"
       },
       {
@@ -442,8 +442,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "10:10",
-        endTime: "11:10",
+        startTime: "10:00",
+        endTime: "11:00",
         hidden: "false"
       },
       {
@@ -451,8 +451,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "11:10",
-        endTime: "12:10",
+        startTime: "11:00",
+        endTime: "12:00",
         hidden: "false"
       },
       {
@@ -460,8 +460,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "13:10",
-        endTime: "14:10",
+        startTime: "13:00",
+        endTime: "14:00",
         hidden: "false"
       },
       {
@@ -469,8 +469,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "14:10",
-        endTime: "15:10",
+        startTime: "14:00",
+        endTime: "15:00",
         hidden: "false"
       },
       {
@@ -478,8 +478,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "15:10",
-        endTime: "16:10",
+        startTime: "15:00",
+        endTime: "16:00",
         hidden: "false"
       },
       {
@@ -487,8 +487,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "17:10",
-        endTime: "18:10",
+        startTime: "17:00",
+        endTime: "18:00",
         hidden: "false"
       },
       {
@@ -496,8 +496,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "18:10",
-        endTime: "19:10",
+        startTime: "18:00",
+        endTime: "19:00",
         hidden: "false"
       },
       {
@@ -505,8 +505,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "20:10",
-        endTime: "21:10",
+        startTime: "20:00",
+        endTime: "21:00",
         hidden: "false"
       },
       {
@@ -514,8 +514,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "21:10",
-        endTime: "22:10",
+        startTime: "21:00",
+        endTime: "22:00",
         hidden: "false"
       }
     ]
@@ -528,8 +528,8 @@ export const CLASS_INFO_LIST = [
         background: "#3388FF",
         classRoomNum: "",
         teacher: "",
-        startTime: "08:10",
-        endTime: "09:10",
+        startTime: "08:00",
+        endTime: "09:00",
         hidden: "false"
       },
       {
@@ -537,8 +537,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "09:10",
-        endTime: "10:10",
+        startTime: "09:00",
+        endTime: "10:00",
         hidden: "false"
       },
       {
@@ -546,8 +546,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "10:10",
-        endTime: "11:10",
+        startTime: "10:00",
+        endTime: "11:00",
         hidden: "false"
       },
       {
@@ -555,8 +555,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "11:10",
-        endTime: "12:10",
+        startTime: "11:00",
+        endTime: "12:00",
         hidden: "false"
       },
       {
@@ -564,8 +564,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "13:10",
-        endTime: "14:10",
+        startTime: "13:00",
+        endTime: "14:00",
         hidden: "false"
       },
       {
@@ -573,8 +573,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "14:10",
-        endTime: "15:10",
+        startTime: "14:00",
+        endTime: "15:00",
         hidden: "false"
       },
       {
@@ -582,8 +582,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "15:10",
-        endTime: "16:10",
+        startTime: "15:00",
+        endTime: "16:00",
         hidden: "false"
       },
       {
@@ -591,8 +591,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "17:10",
-        endTime: "18:10",
+        startTime: "17:00",
+        endTime: "18:00",
         hidden: "false"
       },
       {
@@ -600,8 +600,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "18:10",
-        endTime: "19:10",
+        startTime: "18:00",
+        endTime: "19:00",
         hidden: "false"
       },
       {
@@ -609,8 +609,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "20:10",
-        endTime: "21:10",
+        startTime: "20:00",
+        endTime: "21:00",
         hidden: "false"
       },
       {
@@ -618,8 +618,8 @@ export const CLASS_INFO_LIST = [
         background: "#eeeeee",
         classRoomNum: "",
         teacher: "",
-        startTime: "21:10",
-        endTime: "22:10",
+        startTime: "21:00",
+        endTime: "22:00",
         hidden: "false"
       }
     ]
